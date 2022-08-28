@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ჩანაწერის დამატება</title>
+</head>
+
+<body class="add-data-body">
+    <div class="employes-laptops-btns">
+        <button class="active" id="employes-info-btn" onclick="ExchangeFormsData()">თანამშრომლების ინფო</button>
+        <button id="laptop-info-btn" onclick="ExchangeFormsData()">ლეპტოპის მახასიათებლები</button>
+    </div>
+    <form class="main-form">
+        <div class="name-surname">
+            <div>
+                <label for="name">სახელი</label>
+                <input type="text" id="name" name="name" minlength="2" lang="ka" placeholder="გრიშა" required>
+                <div class="validation-text">მინიმუმ 2 სიმბოლო, ქართული ასოები</div>
+            </div>
+            <div>
+                <label for="surname">გვარი</label>
+                <input type="text" id="surname" name="surname" minlength="2" lang="ka" placeholder="ბაგრატიონი"
+                    required>
+                <div class="validation-text">მინიმუმ 2 სიმბოლო, ქართული ასოები</div>
+            </div>
+        </div>
+        <div><label for="mail">მეილი</label>
+            <input type="mail" id="mail" name="mail" placeholder="grish666@redberry.ge" required>
+            <div class="validation-text">უნდა მთავრდებოდეს redberry.ge-ით</div>
+        </div>
+        <div>
+            <label for="phonenumber">ტელეფონის ნომერი</label>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="+995 598 00 07 01" required>
+            <div class="validation-text">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</div>
+        </div>
+    </form>
+</body>
+
+</html>
+<script src="js.js"></script>
